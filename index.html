@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <script>
+  function runScript(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        var tb = document.getElementById("search").value;
+        search(tb);
+        return false;
+    }
+}
+  </script>
+  <title>Weather.io</title>
+</head>
+<body>
+<div id="search_container">
+  <h1 id=cityName>Fort Smith</h1> 
+  <input type="text" name="city" id="search"  value="71973" onkeypress="return runScript(event)">
+</div>
+<div id="card">
+
+  <div id=img_container>
+    <img src="images/sunny.png" alt="sunny">
+  </div>
+
+
+  <div id=mainContent>
+    <h1 id=mainTemp>75</h1>
+    <p id=high_low>47/65</p>
+  </div>
+
+  <div id=info_container>
+    <ul>
+      <li id="wind_speed">8 mph</li>
+      <li id='humitity'>94%</li>
+    </ul>
+  </div>
+
+</div>
+
+<div id='week_container'>
+  <div id="day_1">
+      <p id='day_1_temp'>70/50</p>
+      <span id='day_1_desc'>Clear</span>
+  </div>
+
+  <div id='day_2'>
+      <p id='day_2_temp'>70/50</p>
+      <span id='day_2_desc'>Clear</span>  
+    </div >
+   
+  <div id='day_3'>
+      <p id='day_3_temp'>70/50</p>
+      <span id='day_3_desc'>Clear</span>
+    </div>
+</div>
+
+ <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#card{
+  background-color: whitesmoke;
+  box-shadow: 5px 10px #c9c7c7;
+
+  max-width: 40%;
+  height: 20em;
+  margin: 0 auto 0 auto;
+ 
+  display: flex;
+  justify-content: center;
+}
+#img_container{
+  
+  width: 40%;
+}
+#img_container img{
+  max-width: 50%;
+
+  position: relative;
+  top: 30%; 
+  left: 25%;
+}
+
+#mainContent{
+
+  width: 20%;
+}
+#mainTemp{
+  position: relative;
+  top: 25%; 
+ 
+  font-size: 4em;
+  right: 15%;
+}
+#high_low{
+  position: relative;
+   top: 10%;
+  
+}
+
+#info_container{
+
+  width: 25%;
+}
+#info_container ul{
+  position: relative;
+  top: 35%; 
+  font-size: 1.2em;
+  list-style: none;
+  padding: 0;
+}
+
+
+#search_container{
+ 
+  max-width: 40%;
+  height: 5em;
+  margin: 5em auto 0 auto; 
+  display: flex;
+
+}
+#cityName{
+  width: 12em;
+}
+#search{
+  height: 1em;
+  margin: 0 auto;
+}
+
+#week_container{
+  width: 40%;
+  height: 7em;
+  margin: 1em auto;
+
+
+  display: flex;
+  justify-content: space-evenly;
+}
+#day_1, #day_2, #day_3{
+  background-color: whitesmoke;
+  width: 32%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 5px 10px #c9c7c7;
+}
