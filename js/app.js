@@ -1,6 +1,6 @@
-const url = "http://api.openweathermap.org/data/2.5/weather?";
+const url = "https://api.openweathermap.org/data/2.5/weather?";
 const appid = "appid=9b28775a1ba1639f86562bc0680320f6";
-const threeDay = 'http://api.openweathermap.org/data/2.5/forecast?appid=9b28775a1ba1639f86562bc0680320f6&units=imperial&q=';
+const threeDay = 'https://api.openweathermap.org/data/2.5/forecast?appid=9b28775a1ba1639f86562bc0680320f6&units=imperial&q=';
 var zip = document.getElementById('search').value; 
 var city = "&q=Wickes";
 var comp_url = url + appid + "&units=imperial" ;
